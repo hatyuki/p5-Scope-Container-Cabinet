@@ -1,13 +1,13 @@
 use inc::Module::Install;
-name 'Scope-Container-Cabinet';
+license  'perl';
+name     'Scope-Container-Cabinet';
 all_from 'lib/Scope/Container/Cabinet.pm';
 
-# requires '';
+requires 'Scope::Container';
 
 tests 't/*.t';
-author_tests 'xt';
 
 test_requires 'Test::More';
 auto_set_repository;
-auto_include;
+
 WriteAll;
